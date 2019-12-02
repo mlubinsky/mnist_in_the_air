@@ -54,6 +54,8 @@ def preprocess_v2(input_size, raw_data, downsample='random', shift_factor=2,
     If input_size < raw_data[i].shape[0], downsample with 'random' or 'equal_space';
     If input_size > raw_data[i].shape[0], pad with zeros to the 'beginning' or 'end' or 'both'
     As raw_data[i] has dim of m*3, padding [0, 0, 0] to it
+    norm is implemented in this version not for the demo. SVM performs better with norm=True.
+    Neural networks in the demo doesn't need normalized data. 
     """
     
     sampled_data = []
