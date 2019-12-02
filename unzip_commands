@@ -1,0 +1,5 @@
+# unzip files
+ls *.zip | awk -F"." '{ print "unzip", $1".zip", "-d", $1 }' > unzip_all.sh
+bash unzip_all.sh
+
+history | tail

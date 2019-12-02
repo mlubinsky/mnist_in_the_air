@@ -1,0 +1,2 @@
+model_checkpoint_path: "dnn2"
+all_model_checkpoint_paths: "dnn2"
